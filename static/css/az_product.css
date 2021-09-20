@@ -44,8 +44,8 @@
 }
 
 #prdct_img {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
 }
 
 #star_img {
@@ -89,3 +89,34 @@
     pointer-events: none;
     color: #aaa;
 }
+
+#hr_list {
+    list-style: none;
+}
+
+#hr_list li {
+    display: inline;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#outer {
+    overflow-y: auto;
+}
+
+#inner {
+    position: relative;
+    z-index: 1;
+}
+
+#home_demo {
+    height: 50px;
+    width: 50px;
+}
+
+.mySlides {
+    display: none;
+}
+
