@@ -98,17 +98,12 @@
     display: inline;
 }
 
-#wrapper {
-    position: relative;
-}
-
 #outer {
-    overflow-y: auto;
-}
-
-#inner {
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 100;
+    top: 8rem;
+    margin-left: 58rem;
+    background-color: rgba(216, 206, 206, 0.667);
 }
 
 #home_demo {

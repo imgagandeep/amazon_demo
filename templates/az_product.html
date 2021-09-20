@@ -128,7 +128,7 @@
         </ul>
     </div> -->
     <br>
-    <div style="width: 100%;" id="wrapper">
+    <div style="width: 100%;">
         <div class="container" style="height: 100%; width: 30%; margin-left: 30px; float: left;">
             <table>
                 <tr>
@@ -216,85 +216,83 @@
             </table>
         </div>
         <div class="container" id="outer" style="height: 750px; width: 35%; float: right;">
-            <div id="inner">
-                <p style="text-align: center;"><text style="color: cadetblue;">Share</text> <img id="share_img" src="{% static 'images/mail.png' %}" alt="mail"> <img id="share_img" src="{% static 'images/facebook.png' %}" alt="fb"> <img id="share_img" src="{% static 'images/twitter.png' %}" alt="twitter"> <img id="share_img" src="{% static 'images/pinterest.png' %}" alt="pinterest"></p>
-                <table style="border: 1px solid; width: 80%; padding: 5px;" align="center" id="table_style" >
-                    <tr>
-                        <td>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    With Exchange
-                                    <p style=" color: #B12704;">Up to ₹18,250.00 off</p>
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Without Exchange
-                                    <p style=" color: #B12704;">Up to ₹51,990.00 <strike style="color: black;">₹71,290.00</strike></p>
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p><b>Add a Protection Plan:</b></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    <text style="color: cadetblue;">2 Year Extended Warranty</text>
-                                    for <text style="color: #B12704;">₹2,499.00</text>
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Quantity: 
-                            <select id="selectNumber">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center">
-                            <button class="btn btn-warning" style="border-radius: 20px; width: 200px;">Add to Cart</button><br>
-                            <button class="btn" style="border-radius: 20px; background-color: orange; margin-top: 5px; width: 200px;">Buy Now</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p style="color: cadetblue;"><img src="{% static 'images/lock.png' %}" alt="lock"> Secure transaction</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    <text style="color: cadetblue;">Add gift option</text>
-                                </label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p style="color: cadetblue;"><img src="{% static 'images/pin2.png' %}" alt="lock" id="pin2"> Select delivery location</p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <p style="text-align: center;"><text style="color: cadetblue;">Share</text> <img id="share_img" src="{% static 'images/mail.png' %}" alt="mail"> <img id="share_img" src="{% static 'images/facebook.png' %}" alt="fb"> <img id="share_img" src="{% static 'images/twitter.png' %}" alt="twitter"> <img id="share_img" src="{% static 'images/pinterest.png' %}" alt="pinterest"></p>
+            <table style="border: 1px solid; width: 80%; padding: 5px;" align="center" id="table_style" >
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                With Exchange
+                                <p style=" color: #B12704;">Up to ₹18,250.00 off</p>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Without Exchange
+                                <p style=" color: #B12704;">Up to ₹51,990.00 <strike style="color: black;">₹71,290.00</strike></p>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b>Add a Protection Plan:</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <text style="color: cadetblue;">2 Year Extended Warranty</text>
+                                for <text style="color: #B12704;">₹2,499.00</text>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Quantity: 
+                        <select id="selectNumber">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <button class="btn btn-warning" style="border-radius: 20px; width: 200px;">Add to Cart</button><br>
+                        <button class="btn" style="border-radius: 20px; background-color: orange; margin-top: 5px; width: 200px;">Buy Now</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="color: cadetblue;"><img src="{% static 'images/lock.png' %}" alt="lock"> Secure transaction</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <text style="color: cadetblue;">Add gift option</text>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="color: cadetblue;"><img src="{% static 'images/pin2.png' %}" alt="lock" id="pin2"> Select delivery location</p>
+                    </td>
+                </tr>
+            </table>
         </div>
         <br><br>
     </div>
