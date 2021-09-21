@@ -55,7 +55,7 @@ body {
   .nextContainer {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 50%;
+    top: 35%;
     transform: translate(0, calc(-50% - 54px));
     height: 54px;
     width: 54px;
