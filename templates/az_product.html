@@ -38,7 +38,8 @@
             </div>
             &nbsp;&nbsp;
             <div id="glow-ingress-block" style="color: white; width: 5%;">
-                <span id="glow-ingress-line2" style="font-weight: bold;" data-bs-toggle="dropdown" aria-expanded="false" class="nav-line-1 nav-progressive-content dropdown-toggle"><img src="{% static 'images/india_flag.svg' %}" id="flag_img"></span>
+                <span id="glow-ingress-line2" style="font-weight: bold;" data-bs-toggle="dropdown" aria-expanded="false" class="nav-line-1 nav-progressive-content dropdown-toggle"><img src="{% static 'images/india_flag.png' %}" id="flag_img"></span>
+
             </div>
             <div id="glow-ingress-block" style="color: white; width: 20%;">
                 <span id="glow-ingress-line1" class="nav-line-1 nav-progressive-content">Hello, Sign in</span><br>
@@ -103,89 +104,100 @@
     <div class="container" id="container">
         <!-- main images -->
         <div class="holder">
-          <div class="slides"><img src="{% static 'images/laptop/1.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/2.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/3.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/4.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/5.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/6.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/7.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/8.jpg' %}"></div>
-          <div class="slides"><img src="{% static 'images/laptop/9.jpg' %}"></div>
-
+            <div class="slides"><img src="{% static 'images/laptop/1.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/2.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/3.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/4.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/5.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/6.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/7.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/8.jpg' %}"></div>
+            <div class="slides"><img src="{% static 'images/laptop/9.jpg' %}"></div>
         </div>
       
         <div class="prevContainer"><a class="prev" onclick="plusSlides(-1)">
-          <svg viewBox="0 0 24 24">
-          <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-      </svg>
-          </a></div>
+            <svg viewBox="0 0 24 24">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+            </svg>
+        </a></div>
         <div class="nextContainer"><a class="next" onclick="plusSlides(1)">
-          <svg viewBox="0 0 24 24">
-        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-      </svg>
-          </a></div>
+            <svg viewBox="0 0 24 24">
+                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+            </svg>
+        </a></div>
       
         <!-- thumnails in a row -->
-        <div class="row">
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/1.jpg' %}" onclick="currentSlide(1)"></div>
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/2.jpg' %}" onclick="currentSlide(2)"></div>
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/3.jpg' %}" onclick="currentSlide(3)"></div>
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/4.jpg' %}" onclick="currentSlide(4)"></div>
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/5.jpg' %}" onclick="currentSlide(5)"></div>    
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/6.jpg' %}" onclick="currentSlide(6)"></div>
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/7.jpg' %}" onclick="currentSlide(7)"></div>
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/8.jpg' %}" onclick="currentSlide(8)"></div>
-          <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/9.jpg' %}" onclick="currentSlide(9)"></div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/1.jpg' %}" onclick="currentSlide(1)"></div>
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/2.jpg' %}" onclick="currentSlide(2)"></div>
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/3.jpg' %}" onclick="currentSlide(3)"></div>
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/4.jpg' %}" onclick="currentSlide(4)"></div>
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/5.jpg' %}" onclick="currentSlide(5)"></div>    
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/6.jpg' %}" onclick="currentSlide(6)"></div>
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/7.jpg' %}" onclick="currentSlide(7)"></div>
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/8.jpg' %}" onclick="currentSlide(8)"></div>
+            <div class="column"><img class="slide-thumbnail" src="{% static 'images/laptop/9.jpg' %}" onclick="currentSlide(9)"></div>
         </div>
+        <table style="width: 100%; margin-top: 50px;">
+            <tr>
+                <td style="width: 50%;">
+                    <table>
+                        <tr>
+                            <td>
+                                <p style="color: cadetblue; margin: 0px; font-weight: bold;">Visit the Lenovo Store</p>
+                                <p style="color: cadetblue; font-size: 14px;">
+                                    <img src="{% static 'images/star.jpg' %}" id="star_img">    118 ratings | 54 answered questions
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td style="float: right;">M.R.P.:</td>
+                            <td><strike>₹71,290.00</strike></td>
+                        </tr>
+                        <tr>
+                            <td style="float: right;">Price:</td>
+                            <td style="color: #B12704 !important;">₹51,990.00</td>
+                        </tr>
+                        <tr>
+                            <td>You Save:</td>
+                            <td style="color: #B12704 !important;">₹19,300.00 (27%)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Inclusive of all taxes</td>
+                        </tr>
+                    </table>
+                    <p style="color: cadetblue;">Free Delivery: <b style="color: black;">Friday Sep17</b> Details</p>
+                    <p style="font-size: 12px;"><b>EMI</b> starts at ₹2,447. No Cost EMI available <text style="color: cadetblue;">EMI options</text></p>
+                </td>
+                <td style="width: 50%;" valign="top">
+                    <table style="border: 1px solid;" id="table_style">
+                        <tr style="border: 1px solid;">
+                            <td><text style="color: #B12704;">Save Extra</text> with 4 offers</td>
+                        </tr>
+                        <tr style="border: 1px solid;">
+                            <td><text style="color: #B12704;">No Cost EMI:</text> Avail No Cost EMI on select cards for orders above ₹3000 | <text style="color: cadetblue;">Details</text></td>
+                        </tr>
+                        <tr style="border: 1px solid;">
+                            <td><text style="color: #B12704;">Bank Offer (3):</text> Flat Rs 3000 Instant Discount with SBI Credit Cards with purchases above Rs 1,00,0…| <text style="color: cadetblue;">See All</text></td>
+                        </tr>
+                        <tr style="border: 1px solid;">
+                            <td>∨ <text style="color: cadetblue;">See 2 more</text></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
     </div>
   
     <br>
-    <div style="width: 100%; margin-top: 5em;">
-        <div class="container" style="height: 100%; width: 30%; margin-left: 30px; float: left;">
-            <table>
-                <tr>
-                    <text style="color: cadetblue;">Visit the Lenovo Store</text>
-                    <td><p style="color: cadetblue; font-size: 14px;"><img src="{% static 'images/star.jpg' %}" id="star_img">    118 ratings | 54 answered questions</p></td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td style="float: right;">M.R.P.:</td>
-                    <td><strike>₹71,290.00</strike></td>
-                </tr>
-                <tr>
-                    <td style="float: right;">Price:</td>
-                    <td style="color: #B12704 !important;">₹51,990.00</td>
-                </tr>
-                <tr>
-                    <td>You Save:</td>
-                    <td style="color: #B12704 !important;">₹19,300.00 (27%)</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Inclusive of all taxes</td>
-                </tr>
-            </table>
-            <p style="color: cadetblue;">Free Delivery: <b style="color: black;">Friday Sep17</b> Details</p>
-            <p style="font-size: 12px;"><b>EMI</b> starts at ₹2,447. No Cost EMI available <text style="color: cadetblue;">EMI options</text></p>
+    <div style="width: 100%; margin-top: 2em;">
+        <div class="container" style="height: 100%; width: 15%; margin-left: 30px; float: left;">
+            &nbsp;
         </div>
         <div class="container" style="height: 100%; width: 30%; float: left; margin-left: 10px;">
-            <table style="border: 1px solid;" id="table_style">
-                <tr style="border: 1px solid;">
-                    <td><text style="color: #B12704;">Save Extra</text> with 4 offers</td>
-                </tr>
-                <tr style="border: 1px solid;">
-                    <td><text style="color: #B12704;">No Cost EMI:</text> Avail No Cost EMI on select cards for orders above ₹3000 | <text style="color: cadetblue;">Details</text></td>
-                </tr>
-                <tr style="border: 1px solid;">
-                    <td><text style="color: #B12704;">Bank Offer (3):</text> Flat Rs 3000 Instant Discount with SBI Credit Cards with purchases above Rs 1,00,0…| <text style="color: cadetblue;">See All</text></td>
-                </tr>
-                <tr style="border: 1px solid;">
-                    <td>∨ <text style="color: cadetblue;">See 2 more</text></td>
-                </tr>
-            </table>
-            <br><br><br>
             <table>
                 <p style="color: green; font-size: 20px;">In Stock</p>
                 <p>Sold by<text style="color: cadetblue;"> Appario Retail Private Ltd </text><text style="color: black;">and</text> <text style="color: cadetblue;"> Fulfilled by Amazon.</text></p>
@@ -223,7 +235,8 @@
             <p>› <text style="color: cadetblue;">See more product details</text></p>
             <p style="color: cadetblue;">Compare with similar items</p>
         </div>
-        <div class="container outer" style="height: 750px; width: 35%; float: right; margin-top: 16.5rem;">
+        <div id="sticky-anchor"></div>
+        <div class="container" id="sticky" style="width: 35%; float: right; margin-left: 58rem;">
             <p style="text-align: center;"><text style="color: cadetblue;">Share</text> <img id="share_img" src="{% static 'images/mail.png' %}" alt="mail"> <img id="share_img" src="{% static 'images/facebook.png' %}" alt="fb"> <img id="share_img" src="{% static 'images/twitter.png' %}" alt="twitter"> <img id="share_img" src="{% static 'images/pinterest.png' %}" alt="pinterest"></p>
             <table style="border: 1px solid; width: 80%; padding: 5px;" align="center" id="table_style" >
                 <tr>
@@ -304,7 +317,7 @@
         </div>
         <br><br>
     </div>
-    <div style="width: 100%; top: 220%; position: absolute; margin-top: 55em;">
+    <div style="width: 100%; top: 220%; position: absolute; margin-top: 58em;">
         <hr style="border: 1px solid;">
         <div class="container">
             <h2><b>Have a question?</b></h2>
@@ -320,37 +333,36 @@
             <h2>From the manufacturer</h2>
             <table style="width: 100%;">
                 <tr>
-                    <td colspan="3" align="center">
-                        <img src="{% static 'images/laptop/m1.jpg' %}" alt="m1">
+                    <td colspan="3">
+                        <img src="{% static 'images/laptop/m1.jpg' %}" alt="m1" id="img_size">
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 30%;">
+                    <td style="width: 30%; padding-top: 30px;">
                         <img src="{% static 'images/laptop/m2.png' %}" alt="m2">
                         <p><text style="font-size: 20px;">As light as light can get</text><br> At 19.9mm and just 1.41kg the Ideapad Slim 3 is the thinnest in its category and it's light enough to carry everywhere. And the 4-Sided Narrow Bezels on the 14” FHD display is sure to give you more for less.</p>
                     </td>
-                    <td style="width: 30%;">
+                    <td style="width: 30%; padding-top: 30px;">
                         <img src="{% static 'images/laptop/m3.png' %}" alt="m3">
                         <p><text style="font-size: 20px;">Pedigree of Performance</text><br> With an AMD Ryzen 5 Processor, find a laptop that truly can keep up with your needs and more! It also comes with an option of NVIDIA MX-450graphics that are sure to do some serious damage on the latest gaming titles.</p>
                     </td>
-                    <td style="width: 30%;">
-                        <br><br>
+                    <td style="width: 30%; padding-top: 30px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 20px;">
                         <img src="{% static 'images/laptop/m4.png' %}" alt="m4">
                         <p><text style="font-size: 20px;">Keep going on and on and on</text><br> With Lenovo’s Rapid Charge Technology, pace through all your tasks without being burdened by your charging cable and when you do need to charge, go from 0 to 80 within 30 minutes. Charge in one go and sit back rest assured to have a battery life of up to 6 hours after 1 single charge from the 3-cell 45Wh battery</p>
                     </td>
-                </tr>
-                <tr>
-                    <td>
+                    <td style="padding-top: 20px;">
                         <img src="{% static 'images/laptop/m5.png' %}" alt="m5">
+                        <p><text style="font-size: 20px;">Stay Connected with Every Device</text><br> The IdeaPad features a host of ports including USB-C to always stay connected no matter the device. Additionally, it’s equipped with 1 USB 3.2 Gen 1, 1 HDMI, 1 USB 2, 1 Card Reader Slot along with 1 3.5 mm headphone/microphone jack, so never have to worry about any other adaptors.</p>
                     </td>
-                    <td>
-                        <p><b style="font-size: 20px;">Stay Connected with Every Device</b><br> The IdeaPad features a host of ports including USB-C to always stay connected no matter the device. Additionally, it’s equipped with 1 USB 3.2 Gen 1, 1 HDMI, 1 USB 2, 1 Card Reader Slot along with 1 3.5 mm headphone/microphone jack, so never have to worry about any other adaptors.</p>
-                    </td>
+                    <td style="padding-top: 20px;">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td colspan="3" align="center">
+                    <td colspan="3">
                         <br><br>
-                        <img src="{% static 'images/laptop/m6.jpg' %}" alt="m6">
+                        <img src="{% static 'images/laptop/m6.jpg' %}" alt="m6" id="img_size">
                     </td>
                 </tr>
             </table>
@@ -460,7 +472,7 @@
                     <br><br>
                 </div>
                 <div style="width: 5%; float: right;"></div>
-                <div style="width: 47.5%; float: right;">
+                <div style="width: 47.5%;">
                     <table>
                         <h2>Additional Informations</h2>
                         <hr style="border: 1px solid;">
@@ -562,29 +574,28 @@
         </div>
     </div>
 
-    
-    <!-- <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
+    <script>
+        function sticky_relocate() {
+            var window_top = $(window).scrollTop();
+            var div_top = $('#sticky-anchor').offset().top;
+            if (window_top > div_top) {
+                $('#sticky').addClass('stick');
+                $('#table_style').addClass('bgstyle');
+            }
+            else {
+                $('#sticky').removeClass('stick');
+                $('#table_style').removeClass('bgstyle');
+                $('#sticky').addClass('nostick');
+            }
         }
-        
-        function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          if (n > x.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          x[slideIndex-1].style.display = "block";  
-        }
-    </script> -->
+            
+        $(function() {
+            $(window).scroll(sticky_relocate);
+            sticky_relocate();
+        });
+    </script>
     <script src="{% static 'js/slider.js' %}"></script>
 </body>
 </html>
-
 
 
