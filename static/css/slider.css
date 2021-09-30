@@ -17,6 +17,13 @@ body {
     max-width: 1000px;
     margin: 0 auto;
   }
+
+  #thumbnail {
+    position: relative;
+    max-width: 1000px;
+    padding-left: 0px;
+    margin: 0 auto;
+  }
   
   /* .holder {
     display: flex;
@@ -109,7 +116,10 @@ body {
 
   .row {
       width: 100%;
+      /* flex-wrap: nowrap; */
+      margin-top: 20px;
   }
+
   
   .row:after {
     content: "";
