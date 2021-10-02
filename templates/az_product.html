@@ -18,8 +18,7 @@
     
     <link rel="stylesheet" href="{% static 'css/az_product.css' %}">
     <link rel="stylesheet" href="{% static 'css/slider.css' %}">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
 </head>
 <body>
 
@@ -109,7 +108,7 @@
 
     <!-- Title Section -->
     <div class="container">
-        <p id="title">Lenovo IdeaPad Slim 3 (2021) | AMD Ryzen 5 |14" FHD IPS |Thin and Light Laptop | 4-Side Narrow Bezel (8GB/512GB SSD/Win10/MS Office 2019/Backlit KB/Fingerprint Reader/Arctic Grey/1.41Kg), 82KT00BXIN</p>
+        <p id="title"></p>
     </div>
 
     <div class="container" id="container">
@@ -157,8 +156,8 @@
                     <table>
                         <tr>
                             <td>
-                                <p style="color: cadetblue; margin: 0px; font-weight: bold;">Visit the Lenovo Store</p>
-                                <p style="color: cadetblue; font-size: 14px;">
+                                <p style="margin: 0px; font-weight: bold;" class="blue_color" id="store"></p>
+                                <p style="font-size: 14px;" class="blue_color">
                                     <img src="{% static 'images/star.jpg' %}" id="star_img">    118 ratings | 54 answered questions
                                 </p>
                             </td>
@@ -167,37 +166,37 @@
                     <table>
                         <tr>
                             <td style="float: right;">M.R.P.:</td>
-                            <td><strike>₹71,290.00</strike></td>
+                            <td><strike id="mrp1"></strike></td>
                         </tr>
                         <tr>
                             <td style="float: right;">Price:</td>
-                            <td style="color: #B12704 !important;">₹51,990.00</td>
+                            <td class="red_color" id="price1"></td>
                         </tr>
                         <tr>
                             <td>You Save:</td>
-                            <td style="color: #B12704 !important;">₹19,300.00 (27%)</td>
+                            <td class="red_color" id="saving"></td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>Inclusive of all taxes</td>
                         </tr>
                     </table>
-                    <p style="color: cadetblue;">Free Delivery: <b style="color: black;">Friday Sep17</b> Details</p>
-                    <p style="font-size: 12px;"><b>EMI</b> starts at ₹2,447. No Cost EMI available <text style="color: cadetblue;">EMI options</text></p>
+                    <p class="blue_color">Free Delivery: <b class="black_color" id="date_del"></b> Details</p>
+                    <p style="font-size: 12px;"><b>EMI</b> starts at <text id="emi"></text>. No Cost EMI available <text class="blue_color">EMI options</text></p>
                 </td>
                 <td style="width: 50%;" valign="top">
                     <table id="table_style">
                         <tr>
-                            <td><text style="color: #B12704;">Save Extra</text> with 4 offers</td>
+                            <td><text class="red_color">Save Extra</text> with 4 offers</td>
                         </tr>
                         <tr>
-                            <td><text style="color: #B12704;">No Cost EMI:</text> Avail No Cost EMI on select cards for orders above ₹3000 | <text style="color: cadetblue;">Details</text></td>
+                            <td><text class="red_color">No Cost EMI:</text> Avail No Cost EMI on select cards for orders above ₹3000 | <text class="blue_color">Details</text></td>
                         </tr>
                         <tr>
-                            <td><text style="color: #B12704;">Bank Offer (3):</text> Flat Rs 3000 Instant Discount with SBI Credit Cards with purchases above Rs 1,00,0…| <text style="color: cadetblue;">See All</text></td>
+                            <td><text class="red_color">Bank Offer (3):</text> Flat Rs 3000 Instant Discount with SBI Credit Cards with purchases above Rs 1,00,0…| <text class="blue_color">See All</text></td>
                         </tr>
                         <tr>
-                            <td>∨ <text style="color: cadetblue;">See 2 more</text></td>
+                            <td>∨ <text class="blue_color">See 2 more</text></td>
                         </tr>
                     </table>
                 </td>
@@ -212,48 +211,24 @@
 
         <!-- Stock Section -->
         <div class="container" style="width: 30%; float: left; margin-left: 10px;">
-            <table>
-                <p style="color: green; font-size: 20px;">In Stock</p>
-                <p>Sold by<text style="color: cadetblue;"> Appario Retail Private Ltd </text><text style="color: black;">and</text> <text style="color: cadetblue;"> Fulfilled by Amazon.</text></p>
-                <p><text style="color: cadetblue;">New (2) from</text> <text style="color: #B12704;"> ₹51,990.00</text> <b>FREE Delivery.</b></p>
-                <tr>
-                    <td style="font-weight: bold;">Series</td>
-                    <td>IdeaPad 3</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">Brand</td>
-                    <td>Lenovo</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">Specific Uses For Product</td>
-                    <td>Personal, Business</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">Screen Size</td>
-                    <td>14 Inches</td>
-                </tr>
-                <tr>
-                    <td style="font-weight: bold;">Operating System</td>
-                    <td>Windows 10 Home</td>
-                </tr>	
+            <table id="stock_table">
+                <p style="font-size: 20px;" class="green_color" id="stock"></p>
+                <p>Sold by<text class="blue_color" id="retailer">  </text><text class="black_color">and</text> <text class="blue_color"> Fulfilled by Amazon.</text></p>
+                <p><text class="blue_color">New (2) from</text> <text class="red_color" id="price2"> </text> <b>FREE Delivery.</b></p>
             </table>
             <hr id="hr_tag">
             <p  style="font-size: 15px; font-weight: bold;">About this item</p>
-            <ul>
-                <li>Processor: 5th Gen AMD Ryzen 5 5500U | Speed: 2.1 GHz (Base) - 4.0 GHz (Max) | 6 Cores | 8MB Cache</li>
-                <li>OS: Pre-Loaded Windows 10 Home with Lifetime Validity</li>
-                <li>Pre-Installed: MS Office Home and Student 2019</li>
-                <li>Memory and Storage: 8GB RAM DDR4, Upgradable up to 12GB | 512 GB SSD</li>
-                <li>Display: 14" FHD (1920x1080) | Brightness : 300nits | IPS Technology | 45% NTSC | Anti-Glare</li>
-            </ul>
-            <p>› <text style="color: cadetblue;">See more product details</text></p>
-            <p style="color: cadetblue;">Compare with similar items</p>
+            
+            <!-- About Detail List -->
+            <ul id="about"></ul>
+            <p>› <text class="blue_color">See more product details</text></p>
+            <p class="blue_color">Compare with similar items</p>
         </div>
 
         <!-- Sticky Price Section -->
         <div id="sticky-anchor"></div>
         <div class="container" id="sticky" style="width: 35%; float: right;">
-            <p style="text-align: center;"><text style="color: cadetblue;">Share</text> <img id="share_img" src="{% static 'images/mail.png' %}" alt="mail"> <img id="share_img" src="{% static 'images/facebook.png' %}" alt="fb"> <img id="share_img" src="{% static 'images/twitter.png' %}" alt="twitter"> <img id="share_img" src="{% static 'images/pinterest.png' %}" alt="pinterest"></p>
+            <p style="text-align: center;"><text class="blue_color">Share</text> <img id="share_img" src="{% static 'images/mail.png' %}" alt="mail"> <img id="share_img" src="{% static 'images/facebook.png' %}" alt="fb"> <img id="share_img" src="{% static 'images/twitter.png' %}" alt="twitter"> <img id="share_img" src="{% static 'images/pinterest.png' %}" alt="pinterest"></p>
             <table align="center" id="table_style" >
                 <tr>
                     <td>
@@ -261,7 +236,7 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 With Exchange
-                                <p style=" color: #B12704;">Up to ₹18,250.00 off</p>
+                                <p class="red_color">Up to <text id="with_ex"></text> off</p>
                             </label>
                         </div>
                     </td>
@@ -272,7 +247,7 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Without Exchange
-                                <p style=" color: #B12704;">Up to ₹51,990.00 <strike style="color: black;">₹71,290.00</strike></p>
+                                <p class="red_color">Up to <text id="price3"></text> <strike class="black_color" id="mrp2"></strike></p>
                             </label>
                         </div>
                     </td>
@@ -287,8 +262,8 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
-                                <text style="color: cadetblue;">2 Year Extended Warranty</text>
-                                for <text style="color: #B12704;">₹2,499.00</text>
+                                <text class="blue_color">2 Year Extended Warranty</text>
+                                for <text class="red_color"id="warranty"></text>
                             </label>
                         </div>
                     </td>
@@ -311,7 +286,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <p style="color: cadetblue;"><img src="{% static 'images/lock.png' %}" alt="lock"> Secure transaction</p>
+                        <p class="blue_color"><img src="{% static 'images/lock.png' %}" alt="lock"> Secure transaction</p>
                     </td>
                 </tr>
                 <tr>
@@ -319,14 +294,14 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                             <label class="form-check-label" for="flexCheckDefault">
-                                <text style="color: cadetblue;">Add gift option</text>
+                                <text class="blue_color">Add gift option</text>
                             </label>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p style="color: cadetblue;"><img src="{% static 'images/pin2.png' %}" alt="lock" id="pin2"> Select delivery location</p>
+                        <p class="blue_color"><img src="{% static 'images/pin2.png' %}" alt="lock" id="pin2"> Select delivery location</p>
                     </td>
                 </tr>
             </table>
@@ -359,22 +334,22 @@
                 <tr>
                     <td id="td_desc1">
                         <img src="{% static 'images/laptop/m2.png' %}" alt="m2">
-                        <p id="desc"><text style="font-size: 20px;">As light as light can get</text><br> At 19.9mm and just 1.41kg the Ideapad Slim 3 is the thinnest in its category and it's light enough to carry everywhere. And the 4-Sided Narrow Bezels on the 14” FHD display is sure to give you more for less.</p>
+                        <p id="desc"><text style="font-size: 20px;">As light as light can get</text><br> <text id="desc_1"></text></p>
                     </td>
                     <td id="td_desc1">
                         <img src="{% static 'images/laptop/m3.png' %}" alt="m3">
-                        <p id="desc"><text style="font-size: 20px;">Pedigree of Performance</text><br> With an AMD Ryzen 5 Processor, find a laptop that truly can keep up with your needs and more! It also comes with an option of NVIDIA MX-450graphics that are sure to do some serious damage on the latest gaming titles.</p>
+                        <p id="desc"><text style="font-size: 20px;">Pedigree of Performance</text><br> <text id="desc_2"></text></p>
                     </td>
                     <td id="td_desc1">&nbsp;</td>
                 </tr>
                 <tr>
                     <td id="td_desc2">
                         <img src="{% static 'images/laptop/m4.png' %}" alt="m4">
-                        <p id="desc"><text style="font-size: 20px;">Keep going on and on and on</text><br> With Lenovo’s Rapid Charge Technology, pace through all your tasks without being burdened by your charging cable and when you do need to charge, go from 0 to 80 within 30 minutes. Charge in one go and sit back rest assured to have a battery life of up to 6 hours after 1 single charge from the 3-cell 45Wh battery</p>
+                        <p id="desc"><text style="font-size: 20px;">Keep going on and on and on</text><br> <text id="desc_3"></text></p>
                     </td>
                     <td id="td_desc2">
                         <img src="{% static 'images/laptop/m5.png' %}" alt="m5">
-                        <p id="desc"><text style="font-size: 20px;">Stay Connected with Every Device</text><br> The IdeaPad features a host of ports including USB-C to always stay connected no matter the device. Additionally, it’s equipped with 1 USB 3.2 Gen 1, 1 HDMI, 1 USB 2, 1 Card Reader Slot along with 1 3.5 mm headphone/microphone jack, so never have to worry about any other adaptors.</p>
+                        <p id="desc"><text style="font-size: 20px;">Stay Connected with Every Device</text><br> <text id="desc_4"></text></p>
                     </td>
                     <td id="td_desc2">&nbsp;</td>
                 </tr>
@@ -390,162 +365,20 @@
         <!-- Product Info -->
         <div class="container" id="brand_desc">
             <hr id="hr_tag">
-            <h3 style="color: #B12704;">Product information</h3>
+            <h3 class="red_color">Product information</h3>
             <div>
                 <div style="width: 47.5%; float: left;">
-                    <table>
+                    <table id="product_table" style="margin-bottom: 5%;">
                         <h2>Technical Details</h2>
                         <hr style="border: 1px solid;">
-                        <tr id="bottom_border">
-                            <td id="right_border">Brand</td>
-                            <td>Lenovo</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Manufacturer</td>
-                            <td>
-                                <p>
-                                    Lenovo, One of the below: Hefei Bitland Information Technology Co.,Ltd - No.4088 Jiuxiu Road National Hefei economic & technology development area Hefei Anhui China LCFC（Hefei) Electronics Technology Co., Ltd. - NO.1-3188,YUNGU ROAD, HEFEI EXPORT PROCESSING ZONE. ANHUI PROVINCE,CHINA  Tech-Com(Shanghai) Computer Co Ltd - No.6 Ln.58,San-Zhuang Rd., Songjiang EPZ ShangHai, China Wistron InfoComm (Kunshan) Co.Ltd - 168# First Avenue, Kunshan Export Processing Zone, Kunshan, Jiangsu, China Compal information technology (kunshan) CO., LTD. - Address: No. 58, the 1st street, Kunshan Export Processing Zone, Jiangsu, P.R.O.C. CHINA Kunshan Hichain storage Co. Ltd - No. 88 Xinxiang Road  Avenue Kunshan CBZ Wujiang Hichain warehousing LTD - No.2088 Pangjin road, Wujiang economic development area,  Jiangsu, China 
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Series</td>
-                            <td> ‎IdeaPad 3</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Colour</td>
-                            <td>‎ARCTIC_GREY</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Form Factor</td>
-                            <td>‎Ultra-Portable</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Item Height</td>
-                            <td>20 Millimeters</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Item Width</td>
-                            <td>21.6 Centimeters</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Standing screen display size</td>
-                            <td>14 Inches</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Screen Resolution</td>
-                            <td>1927 x 1080 pixels</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Resolution</td>
-                            <td>1920 x 1080 Pixels</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Product Dimensions</td>
-                            <td>32.4 x 21.6 x 2 cm; 1.41 Kilograms</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Batteries</td>
-                            <td>1 Lithium Polymer batteries required. (included)</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Item model number</td>
-                            <td>‎82KT00BXIN</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border"> Processor Brand</td>
-                            <td>‎AMD</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Processor Type</td>
-                            <td>Ryzen 5</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Processor Speed</td>
-                            <td>2.1 GHz</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Processor Count</td>
-                            <td>6</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">RAM Size</td>
-                            <td>8 GB</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Memory Technology</td>
-                            <td>‎DDR4</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Computer Memory Type</td>
-                            <td> ‎DDR4 SDRAM</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Maximum Memory Supported</td>
-                            <td>‎12 GB</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Hard Disk Description</td>
-                            <td>‎SSD</td>
-                        </tr>
                     </table>
-                    <br><br>
                 </div>
                 <div style="width: 5%; float: right;"></div>
                 <div style="width: 47.5%;">
-                    <table>
+                    <table id="additional_table" style="margin-bottom: 5%;">
                         <h2>Additional Informations</h2>
                         <hr style="border: 1px solid;">
-                        <tr id="bottom_border">
-                            <td id="right_border">ASIN</td>
-                            <td>B096SKFBCF</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Customer Reviews</td>
-                            <td>4.5 out of 5 stars </td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Best Sellers Rank </td>
-                            <td>
-                                <p>
-                                    #524 in Computers & Accessories (<text style="color: cadetblue;">See Top 100 in Computers & Accessories</text>) #17 in <text style="color: cadetblue;">Laptops</text> 
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Date First Available </td>
-                            <td>7 June 2021 </td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Packer</td>
-                            <td>
-                                <p>
-                                    One of the below: Hefei Bitland Information Technology Co.,Ltd - No.4088 Jiuxiu Road National Hefei economic & technology development area Hefei Anhui China LCFC（Hefei) Electronics Technology Co., Ltd. - NO.1-3188,YUNGU ROAD, HEFEI EXPORT PROCESSING ZONE. ANHUI PROVINCE,CHINA  Tech-Com(Shanghai) Computer Co Ltd - No.6 Ln.58,San-Zhuang Rd., Songjiang EPZ ShangHai, China Wistron InfoComm (Kunshan) Co.Ltd - 168# First Avenue, Kunshan Export Processing Zone, Kunshan, Jiangsu, China Compal information technology (kunshan) CO., LTD. - Address: No. 58, the 1st street, Kunshan Export Processing Zone, Jiangsu, P.R.O.C. CHINA Kunshan Hichain storage Co. Ltd - No. 88 Xinxiang Road  Avenue Kunshan CBZ Wujiang Hichain warehousing LTD - No.2088 Pangjin road, Wujiang economic development area,  Jiangsu, China 
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Importer</td>
-                            <td>
-                                <p>
-                                    Lenovo (India) Private Limited, RBD Icon, Level 2, Doddenakundi Village, Marathahalli Outer Ring Road, K. R. Puram Hobli, Bangalore 560037, Karnataka, India 
-                                </p>
-                            </td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Item Dimensions LxWxH</td>
-                            <td>32.4 x 21.6 x 2 Centimeters </td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Net Quantity</td>
-                            <td>1 Piece</td>
-                        </tr>
-                        <tr id="bottom_border">
-                            <td id="right_border">Generic Name</td>
-                            <td>Laptop</td>
-                        </tr>
                     </table>
-                    <br><br><br><br>
                 </div>
             </div>
         </div>
@@ -572,6 +405,7 @@
         });
     </script>
     <script src="{% static 'js/slider.js' %}"></script>
+    <script src="{% static 'js/dynamic_content.js' %}"></script>
 </body>
 </html>
 
